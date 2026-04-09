@@ -1,0 +1,257 @@
+.icone-redes  {
+    display: flex;      
+    justify-content: center;
+    gap: 25px;
+    margin-top: -9%;
+}
+
+#img-in:hover, #img-email:hover, #img-wpp:hover{
+  transform: scale(1.4);
+}
+
+
+body {
+  margin:30px;
+  font-family: Arial, sans-serif;
+  background: #0d1117;
+  color: white;
+  background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #000000 100%);
+ 
+}
+
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1100px;
+  font-size: 18px;
+  width: 100%;
+}
+
+/* biografiaa */
+.hero-text h1 {
+  font-size: 60px;
+  
+  
+}
+
+.hero-text p {
+  color: white;
+  max-width: 500px;
+  margin-top: -5%;
+  line-height: 1.5;
+}
+
+/* BOTÕES */
+.btn, .btn-contato {
+  background: #2ea043;
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+
+/* IMAGEM */
+.hero-image img {
+  width: 250px;
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+/*projetos*/
+
+.container-pai {
+    display: flex;         /* Coloca os filhos em linha */
+    justify-content: center; /* Centraliza os dois na tela */
+    gap: 20px;            /* Espaço entre um card e outro */
+    flex-wrap: wrap;
+    margin-right: 20%;
+    padding: 20px;
+}
+
+
+.projetos, .projetos1{
+    background-color: rgba(128, 128, 128, 0.6);
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    width: 600px;  
+}
+
+video{
+  width: 100%;
+}
+#link, #botao-voltar, #enviar-contato, #voltar-pagina, #limpar-form {
+  background-color: #2ea043;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#link:hover,
+#botao-voltar:hover,
+#enviar-contato:hover,
+#voltar-pagina:hover,
+#limpar-form:hover {
+  transform: scale(1.05);
+}
+
+
+/*contato*/
+
+#formContato{
+    background: rgba(128, 128, 128, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: 430px;
+    margin-right:100px;
+    margin-top: 200px;  
+    font-family: 'Trebuchet MS';
+    width: 100%;
+    max-width: 400px;
+    
+
+}
+
+#formContato input, textarea, text{
+  border-radius: 8px;
+  padding: 6px;
+  border: solid 1px #ccc;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.tech-stack-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Fica atrás de tudo */
+  overflow: hidden;
+}
+
+.icon {
+  position: fixed;
+  opacity: 6;
+  width: 70px;
+  pointer-events: none;
+  animation: andarPelaTela 20s linear infinite;
+
+}
+
+@keyframes andarPelaTela {
+  0% {
+    transform: translate(0, 0) rotate(600deg) ;
+  }
+  25% {
+    transform: translate(30vw, 20vh) rotate(1000deg) ;
+  }
+  50% {
+    transform: translate(60vw, -10vh) rotate(2000deg);
+  }
+  75% {
+    transform: translate(20vw, 40vh) rotate(600deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(800deg) ;
+  }
+}
+
+
+
+.p1 { 
+  top: 10%; left: 5%; 
+  animation-duration: 30s; 
+}
+
+.p2 { 
+  top: 20%; left: 5%; 
+  animation-duration: 30s; 
+  width: 150px;
+   
+}
+
+.p3 { 
+  top: 40%; left: 5%; 
+  animation-duration: 30s; 
+  width: 130px;
+  
+}
+
+.p4 { 
+  top: 70%; left: 20%; 
+  animation-duration: 30s; 
+  
+}
+
+.p5 { 
+  top:80%; left: 5%; 
+  animation-duration: 30s; 
+  
+}
+
+.p6 {
+  top: 60%; left: 40%;
+  animation-duration: 30s;
+  width: 85px;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    width: 180px;
+  }
+
+  .icone-redes {
+    margin-top: 20px;
+  }
+
+  .icon {
+    width: 50px;
+    opacity: 0.1;
+  }
+
+  #formContato{
+   width:400px;
+   height: 100%;
+   margin-top: -2%;
+  
+  }
+
+}
