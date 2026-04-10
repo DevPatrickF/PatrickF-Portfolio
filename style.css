@@ -255,3 +255,22 @@ video{
   }
 
 }
+
+
+@media(max-width: 600px) {
+  .btn-contato{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top: 7%;
+  }
+}
+
+
+@media(max-width: 600px) {
+  .icone-redes{
+    display: flex;
+    gap:10px;
+    margin-top: 20%;
+  }
+}
