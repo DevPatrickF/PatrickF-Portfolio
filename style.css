@@ -74,20 +74,19 @@ body {
 
 .container-pai {
     display: flex;         /* Coloca os filhos em linha */
-    justify-content: center; /* Centraliza os dois na tela */
     gap: 20px;            /* Espaço entre um card e outro */
     flex-wrap: wrap;
-    margin-right: 20%;
     padding: 20px;
 }
 
 
-.projetos, .projetos1{
+.projetos, .projetos1, .projetos2{
     background-color: rgba(128, 128, 128, 0.6);
     color: white;
     border-radius: 10px;
     padding: 8px;
-    width: 600px;  
+    width: 400px;
+    margin-right: 160px;
 }
 
 video{
